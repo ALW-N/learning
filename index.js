@@ -1,29 +1,25 @@
-function starPattern(n){
+// function printToscreen(){
+//     console.log("Printed after 3 seconds")
+// }
 
-   var stringPattern = ""
-   for(i=0 ; i<n ; i++){
-    stringPattern += "*"
-   }console.log(stringPattern)
+// setTimeout(printToscreen, 3 * 1000)
+
+// let count = 0;
+// for (i = 0; i < 10; i++) {
+//     count += 1
+// } console.log(count)
+
+
+// console.log("hello world")
+
+
+var counter = 1;
+
+function printcounter(){
+    console.clear()
+    console.log(counter);
+    counter = counter + 1;
 }
 
-function inBetween(n){
-    var str = ""
-    str += "*"
-    for(i=0 ; i<n-2 ; i++){
-        str+=" "
-    }
-    str+="*"
-    console.log(str)
-}
+setInterval(printcounter, 1000)
 
-function finalResult(n){
-    starPattern(n)
-    for(var i=0 ; i<n-2 ; i++){
-        inBetween(n)
-    }
-    starPattern(n)
-}
-
-// starPattern(5)
-// inBetween(10)
-finalResult(10)
