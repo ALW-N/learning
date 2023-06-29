@@ -13,13 +13,13 @@
 // console.log("hello world")
 
 
-var counter = 1;
+// var counter = 1;
 
-function printcounter(){
-    console.clear()
-    console.log(counter);
-    counter = counter + 1;
-}
+// function printcounter(){
+//     console.clear()
+//     console.log(counter);
+//     counter = counter + 1;
+// }
 
-setInterval(printcounter, 1000)
+// setInterval(printcounter, 1000)
 
