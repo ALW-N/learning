@@ -8,5 +8,17 @@ Hint - use Date class exposed in JS
 */
 
 function calculateTime(n) {
-    return 0.01;
+    const startTime = new Date();
+    var count = 0;
+    for(i=0;i<n;i++){
+        count+=i
+    }
+    const endTime = new Date();
+    const timeTaken = (endTime - startTime) / 1000;
+    console.log(count)
+    console.log(`Time Taken To FInd the Result from 1 to ${n} is ${timeTaken} secs`);
+    // return 0.01;
 }
+
+// calculateTime(100)
+calculateTime(100000)
